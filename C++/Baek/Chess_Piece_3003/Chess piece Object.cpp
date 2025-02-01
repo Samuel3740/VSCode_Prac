@@ -4,7 +4,7 @@ using namespace std;
 
 class Chess{
     private:
-        vector<int> arr = {1, 1, 2, 2, 2, 8};
+        vector<int> piece = {1, 1, 2, 2, 2, 8};
     
     public:   
         void check_number(){
@@ -15,7 +15,7 @@ class Chess{
             }
             
             for(int i = 0; i < 6; ++i){
-                cout << arr[i] - input[i] << " ";
+                cout << piece[i] - input[i] << " ";
             }
         } 
 };
