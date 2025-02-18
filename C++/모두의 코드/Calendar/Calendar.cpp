@@ -7,56 +7,61 @@ class Date {
     int day_;
 
     int GetDaysInMonth(int year, int month){
-        if (month == 2) {
-            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
-                return 29; 
-            else
-                return 28; 
+        if(month == 2){
+            if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
+                return 29;
+            }
+            else{
+                return 28;
+            }
         }
 
-        if (month == 4 || month == 6 || month == 9 || month == 11)
+        if(month == 4 || month == 6 || month == 9 || month == 11){
             return 30;
-        return 31;
+        }
+        else{
+            return 31;
+        }
     }
 
 public:
-    void SetDate(int year, int month, int day) {
+    void SetDate(int year, int month, int day){
         year_ = year;
         month_ = month;
         day_ = day;
     }
 
-    void AddDay(int inc) {
+    void AddDay(int inc){
         day_ += inc;
-        while (day_ > GetDaysInMonth(year_, month_)) {
+        while(day_ > GetDaysInMonth(year_, month_)){
             day_ -= GetDaysInMonth(year_, month_);
             month_++;
-            if (month_ > 12) { 
+            if (month_ > 12){ 
                 month_ = 1;
                 year_++;
             }
         }
     }
 
-    void AddMonth(int inc) {
+    void AddMonth(int inc){
         month_ += inc;
-        while (month_ > 12) {
+        while(month_ > 12){
             month_ -= 12;
             year_++;
         }
     }
 
-    void AddYear(int inc) {
+    void AddYear(int inc){
         year_ += inc;
     }
 
-    void ShowDate() {
+    void ShowDate(){
         cout << year_ << " " << (month_ < 10 ? "0" : "") << month_ << " "
             << (day_ < 10 ? "0" : "") << day_ << endl;
     }
 };
 
-int main() {
+int main(){
     Date date;
 
     int year, month, day, inc;
@@ -71,6 +76,4 @@ int main() {
 
     cout << "출력: ";
     date.ShowDate();
-
-    return 0;
 }
