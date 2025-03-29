@@ -10,7 +10,7 @@ int main(){
 
     vector<int> divisors;
 
-    // 약수 저장장 
+    // 약수 저장 
     for(int i = 1; i <= N; i++){
         if(N % i == 0){
             divisors.push_back(i);
