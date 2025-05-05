@@ -7,5 +7,5 @@ int main(){
 
     cin >> X >> M;
 
-    cout << X * (M + 1) << '\n';
+    cout << X * (M + 1) << endl;
 }
