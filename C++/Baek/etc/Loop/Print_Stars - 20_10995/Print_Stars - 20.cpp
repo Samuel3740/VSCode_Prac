@@ -13,7 +13,7 @@ int main(){
 
         for(int j = 1; j <= N; j++){
             cout << '*';
-            if (j != N) cout << ' ';
+            if(j != N) cout << ' ';
         }
 
         cout << '\n';
