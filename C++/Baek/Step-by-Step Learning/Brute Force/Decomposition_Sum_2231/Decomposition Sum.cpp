@@ -21,11 +21,13 @@ int main(){
     for(int i = 1; i < N; i++){
         if(i + digit_sum(i) == N){
             cout << i << endl;  
-
+            system("pause");
             return 0;
         }
     }
 
     cout << 0 << endl;
+    system("pause");
+
     return 0;
 }
