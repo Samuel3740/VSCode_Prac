@@ -11,7 +11,7 @@ int main(){
     int b = input[4] - '0'; 
     int c = input[8] - '0';
 
-    if (a + b == c){
+    if(a + b == c){
         cout << "YES" << endl;
     } 
     else{
