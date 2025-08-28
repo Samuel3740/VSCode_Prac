@@ -7,7 +7,7 @@ int main(){
 	cin.tie(0);
     
     int N, M;
-F
+
     cin >> N;
     
     unordered_set<int> cards;
