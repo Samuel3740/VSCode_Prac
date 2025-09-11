@@ -7,10 +7,15 @@ int main(){
 
     cin >> A >> B >> C >> D;
     
+    A = abs(A);
+    B = abs(B);
+    C = abs(C);
+    D = abs(D);
+    
     string AB = to_string(A) + to_string(B);
     string CD = to_string(C) + to_string(D);
     
-    int result = stoi(AB) + stoi(CD);
+    long long result = stoll(AB) + stoll(CD);
     
     cout << result << endl;
     
