@@ -27,5 +27,6 @@ int main() {
         cout << "Junhee is not cute!" << endl;
     }
     
+    
     return 0;
 }
