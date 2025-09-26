@@ -8,7 +8,6 @@ int main(){
     cin.tie(NULL);
     
     int n;
-
     cin >> n;
     
     vector<int> arr(n);
@@ -20,7 +19,6 @@ int main(){
     sort(arr.begin(), arr.end());
     
     int m;
-
     cin >> m;
     
     for(int i = 0; i < m; i++){
