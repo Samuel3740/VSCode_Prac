@@ -4,12 +4,16 @@
 using namespace std;
 
 int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
     long long a;
-
-    double side = sqrt(static_cast<double>(a));
-    double perimeter = 4.0 * side;
-
     cin >> a;
-
+    
+    double side = sqrt((double)a);
+    double perimeter = 4.0 * side;
+    
     cout << fixed << setprecision(10) << perimeter << endl;
+    
+    return 0;
 }
