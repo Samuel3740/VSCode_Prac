@@ -29,8 +29,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/roysa/Dev/vscode-prac/C++/Baek/etc/Advanced/FizzBuzz_28702",
+      "program": "c:/Users/roysa/Dev/vscode-prac/C++/Baek/etc/Advanced/FizzBuzz_28702/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
