@@ -8,17 +8,17 @@ int main() {
     cin.tie(NULL);
 
     int N;
-    bool isPossible = true;
-    vector<int> count(26, 0);
-
     cin >> N;
 
     while (N--) {
         string s1, s2;
+        bool isPossible = true;
+        vector<int> count(26, 0);
+        
         cin >> s1 >> s2;
 
         if (s1.length() != s2.length()) {
-            cout << "Impossible" << "\n";
+            cout << "Impossible\n";
             continue;
         }
 
@@ -35,9 +35,9 @@ int main() {
         }
 
         if (isPossible) {
-            cout << "Possible" << "\n";
+            cout << "Possible\n";
         } else {
-            cout << "Impossible" << "\n";
+            cout << "Impossible\n";
         }
     }
 
