@@ -76,6 +76,7 @@ int main(){
 
     cout << "출력: ";
     date.ShowDate();
-
+ 
+    
     return 0;
 }
